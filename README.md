@@ -1,6 +1,8 @@
 mwra-biobot
 ===========
 
+![graph of MWRA wastewater testing for COVID-19, 2023](https://github.com/bensteinberg/mwra-biobot/blob/main/mwra-biobot-2023-northern-copies-ml.png?raw=true)
+
 This repository contains a tool for converting the PDF found at the [Massachusetts Water Resources Authority Wastewater COVID-19 Tracking page](https://www.mwra.com/biobot/biobotdata.htm) into usable data.
 
 To produce `mwra-biobot.csv`, [install Poetry](https://python-poetry.org/docs/#installation), then run:

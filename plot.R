@@ -17,10 +17,10 @@ data <- read_csv(
 )
 
 ggplot(
-    data=data %>% filter(`Sample Date`>"2022-01-01") %>% filter(`Sample Date`<"2023-09-15"),
-    aes(x = `Sample Date`, y = `Northern \n7 day avg`)
+    data=data %>% filter(`Sample Date`>"2023-01-01") %>% filter(`Sample Date`<"2023-09-15"),
+    aes(x = `Sample Date`, y = `Northern \n(copies/mL)`)
 ) +
     geom_point() +
     geom_smooth(method="gam" , color="red", fill="#69b3a2", se=TRUE)
 
-ggsave('mwra-biobot.png')
+ggsave('mwra-biobot-2023-northern-copies-ml.png')
