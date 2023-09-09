@@ -1,0 +1,6 @@
+pdf/*.pdf
+Rplots.pdf
+mwra-biobot.png
+
+.RData
+__pycache__/
