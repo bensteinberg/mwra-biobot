@@ -3,16 +3,16 @@
 set -e
 
 POETRY=~/.local/bin/poetry
+CSV=mwra-biobot.csv
 
-if [[ $(grep `$POETRY run extract --name` mwra-biobot.csv) ]] ; then
+if [[ $(grep `$POETRY run extract --name` $CSV) ]] ; then
     echo "No new file, exiting"
     exit 0
 fi
 
 $POETRY run extract
 
-if [[ `git status mwra-biobot.csv --porcelain` ]] ; then
-    git add mwra-biobot.csv
-    git commit -m "Update CSV file"
+if [[ `git status $CSV --porcelain` ]] ; then
+    git commit -m "Update CSV file" $CSV
     git push origin main || exit 1
 fi
