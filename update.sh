@@ -1,11 +1,15 @@
 #!/bin/bash
 
-if [[ $(grep `poetry run extract --name` mwra-biobot.csv) ]] ; then
+set -e
+
+POETRY=~/.local/bin/poetry
+
+if [[ $(grep `$POETRY run extract --name` mwra-biobot.csv) ]] ; then
     echo "No new file, exiting"
     exit 0
 fi
 
-poetry run extract
+$POETRY run extract
 
 if [[ `git status mwra-biobot.csv --porcelain` ]] ; then
     git add mwra-biobot.csv
