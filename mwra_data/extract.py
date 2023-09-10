@@ -39,8 +39,6 @@ def get_href(base):
     r = requests.get(f'{base}/biobotdata.htm')
     soup = BeautifulSoup(r.text, 'html.parser')
 
-    href = soup.find_all(
+    return soup.find_all(
         'a', href=lambda x: x and '-data.pdf' in x
     )[0].get('href')
-
-    return href
