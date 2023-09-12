@@ -1,4 +1,4 @@
-# extracted from MWRAData20230908-data.pdf by mwra_data 0.1.0
+# extracted from MWRAData20230911-data.pdf by mwra_data 0.1.1
 Sample Date,"Southern 
 (copies/mL)","Northern 
 (copies/mL)","Southern 
@@ -1297,7 +1297,7 @@ Interval"
 9/4/2023,701,603,538,613,221,324,190,278
 9/5/2023,924,563,596,633,292,427,178,260
 9/6/2023,556,372,612,604,176,257,117,172
-9/7/2023,,,,,,,,
+9/7/2023,571,731,585,572,180,264,231,338
 9/8/2023,,,,,,,,
 9/9/2023,,,,,,,,
 9/10/2023,,,,,,,,
