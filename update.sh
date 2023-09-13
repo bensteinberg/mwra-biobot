@@ -13,6 +13,7 @@ fi
 $POETRY run extract
 
 if [[ `git status $CSV --porcelain` ]] ; then
-    git commit -m "Update CSV file" $CSV
+    R --no-save < tidy.R
+    git commit -m "Update CSV files" $CSV mwra-biobot-tidied.csv
     git push origin main || exit 1
 fi
