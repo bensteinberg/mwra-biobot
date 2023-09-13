@@ -14,7 +14,7 @@ poetry run extract
 
 The script saves the PDF file in the `pdf/` directory, but I am not including these files in the repo.
 
-The repo includes two R files as an example of how to load and plot data from the CSV file, as well as a derivative [CSV file](mwra-biobot-tidied.csv) of the data in tidied form.
+The repo includes two R files as an example of how to load and plot data from the CSV file, as well as a derivative [CSV file](mwra-biobot-tidied.csv) of the data in [tidied](https://tidyr.tidyverse.org/articles/tidy-data.html#tidy-data) form.
 
 Similar tools
 -------------
