@@ -3,7 +3,7 @@ source("tidy.R")
 ggplot(
   data = tidied %>%
     filter(Sample.Date > "2023-01-01") %>%
-    filter(Sample.Date < "2023-09-15"),
+    filter(Sample.Date < "2023-12-31"),
   aes(x = Sample.Date, y = Copies.mL)
 ) +
   geom_point() +
