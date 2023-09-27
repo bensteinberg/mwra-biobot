@@ -1,14 +1,9 @@
 source("tidy.R")
 
-last_date <- tidied %>%
-  drop_na(Copies.mL) %>%
-  select(Sample.Date) %>%
-  last
-
 ggplot(
   data = tidied %>%
-    filter(Sample.Date > "2023-01-01") %>%
-    filter(Sample.Date <= last_date),
+    drop_na(Copies.mL) %>%
+    filter(Sample.Date > "2023-01-01"),
   aes(x = Sample.Date, y = Copies.mL)
 ) +
   geom_point() +
