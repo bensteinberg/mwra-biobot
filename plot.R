@@ -8,6 +8,7 @@ ggplot(
 ) +
   geom_point() +
   geom_smooth() +
+  scale_x_date(guide = guide_axis(angle = 45)) +
   facet_wrap(~ Region) +
   ggtitle("MWRA Biobot COVID-19 RNA copies/mL, 2023")
 
