@@ -27,7 +27,26 @@ def get_data(base, name):
             f.write(r.content)
 
     tables = camelot.read_pdf(f'{pdf}', pages='1-end')
-    result = pd.concat([t.df.iloc[:, : 9] for t in tables])
+
+    # As of 2024-07-19, camelot extracts the data on the last page
+    # as a newline-separated string instead of separate columns;
+    # the conditional in this loop handles this for now.
+    dataframes = []
+    for t in tables:
+        if t.shape[1] != 2:
+            dataframes.append(t.df)
+        else:
+            dataframes.append(
+                pd.concat(
+                    [
+                        t.df[0],
+                        t.df[1].str.split('\n', expand=True)
+                    ],
+                    axis='columns',
+                    ignore_index=True
+                )
+            )
+    result = pd.concat([d.iloc[:, : 9] for d in dataframes])
 
     with open('mwra-biobot.csv', 'w') as f:
         f.write(f'# extracted from {href} by {__package__} {__version__}\n')
