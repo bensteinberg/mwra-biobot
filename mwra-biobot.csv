@@ -1,4 +1,4 @@
-# extracted from MWRAData20240731-data.pdf by mwra_data 0.1.1
+# extracted from MWRAData20240801-data.pdf by mwra_data 0.1.1
 Sample Date,"Southern 
 (copies/mL)","Northern 
 (copies/mL)","Southern 
@@ -1624,8 +1624,8 @@ Interval"
 7/27/2024,743,613,785,749,235,343,194,283
 7/28/2024,703,456,748,720,222,325,144,211
 7/29/2024,823,503,755,659,260,380,159,232
-"7/30/2024
-7/31/2024
+7/30/2024,606,569,740,677,192,280,180,263
+"7/31/2024
 8/1/2024
 8/2/2024
 8/3/2024
