@@ -22,6 +22,7 @@ def get_data(base, name):
     pdf = 'pdf' / Path(href)
 
     if not pdf.exists():
+        pdf.parent.mkdir(exist_ok=True)
         r = requests.get(f'{base}/{href}')
         with open(pdf, 'wb') as f:
             f.write(r.content)
