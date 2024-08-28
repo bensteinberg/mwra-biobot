@@ -10,7 +10,7 @@ __version__ = importlib.metadata.version(__package__)
 
 
 @click.command()
-@click.option('--base', default='https://www.mwra.com/biobot')
+@click.option('--base', default='https://www.mwra.com')
 @click.option('--name/--no-name', default=False)
 def get_data(base, name):
     """ Gets Biobot data from a PDF file """
@@ -56,9 +56,9 @@ def get_data(base, name):
 
 def get_href(base):
     """ Gets PDF filename """
-    r = requests.get(f'{base}/biobotdata.htm')
+    r = requests.get(f'{base}/biobot/biobotdata.htm')
     soup = BeautifulSoup(r.text, 'html.parser')
 
     return soup.find_all(
-        'a', href=lambda x: x and '-data.pdf' in x
+        'a', href=lambda x: x and x.startswith('/media/file/') and '-data' in x
     )[0].get('href')
