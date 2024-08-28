@@ -19,7 +19,7 @@ def get_data(base, name):
         click.echo(href)
         return 0
 
-    pdf = Path('pdf/' + Path(href).name)
+    pdf = Path('pdf/' + Path(href).name + '.pdf')
 
     if not pdf.exists():
         pdf.parent.mkdir(exist_ok=True)
