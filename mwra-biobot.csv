@@ -1,4 +1,4 @@
-# extracted from /media/file/mwradata20250101-data by mwra_data 0.1.9
+# extracted from /media/file/mwradata20250103-data by mwra_data 0.1.9
 Sample Date,"Southern 
 (copies/mL)","Northern 
 (copies/mL)","Southern 
@@ -1773,5 +1773,5 @@ Interval"
 12/23/2024,1871,1106,1879,1468,591,864,349,511
 12/24/2024,1435,,1979,1411,453,663,,
 12/25/2024,1579,1015,1979,1374,499,729,321,469
-"12/26/2024
-12/27/2024",,,,,,,,
+12/26/2024,2486,2123,2238,1542,786,1148,671,981
+12/27/2024,,,,,,,,
