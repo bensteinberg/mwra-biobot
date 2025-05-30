@@ -1,4 +1,4 @@
-# extracted from /media/file/mwradata20250527-data by mwra_data 0.1.9
+# extracted from /media/file/mwradata20250528-data by mwra_data 0.1.9
 Sample Date,"Southern 
 (copies/mL)","Northern 
 (copies/mL)","Southern 
@@ -1919,9 +1919,9 @@ Interval"
 5/18/2025,100,81,103,126,31,46,26,37
 5/19/2025,106,74,107,121,33,49,23,34
 5/20/2025,150,117,106,119,48,70,37,54
-"5/21/2025
-5/22/2025
-5/23/2025
+5/21/2025,132,190,110,132,42,61,60,88
+5/22/2025,85,136,116,127,27,39,43,63
+"5/23/2025
 5/24/2025
 5/25/2025
 5/26/2025
