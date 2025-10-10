@@ -1,4 +1,4 @@
-# extracted from /media/file/mwradata20251007-datapdf by mwra_data 0.1.9
+# extracted from /media/file/mwradata20251010-datapdf by mwra_data 0.1.9
 Sample Date,"Southern 
 (copies/mL)","Northern 
 (copies/mL)","Southern 
@@ -2055,9 +2055,12 @@ Interval"
 10/1/2025,202,379,220,275,64,93,120,175
 10/2/2025,366,347,227,281,116,169,110,160
 "10/3/2025
-10/4/2025
-10/5/2025
-10/6/2025
+10/4/2025",,,218,294,,,,
+,215,,216,275,"68
+99",,,
+10/5/2025,326,,242,,"103
+151",,,
+"10/6/2025
 10/7/2025
 10/8/2025
 10/9/2025
