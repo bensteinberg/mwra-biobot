@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mwra-data"
-version = "0.2.9"
+version = "0.3.0"
 description = "Format-shift MWRA Biobot COVID-19 wastewater data"
 authors = ["Ben Steinberg <ben@potswift.org>"]
 readme = "README.md"
